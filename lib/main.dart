@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import './pages/home.dart';
-// import './pages/test.dart';
-// import 'pages/list_view.dart';
-// import './pages/test/native.dart';
-// import 'pages/test/rest_api.dart';
+import 'pages/home/page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,9 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        fontFamily: 'Nunito',
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: const HomePage(),
     );
   }
 }

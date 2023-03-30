@@ -29,14 +29,7 @@ class _ListViewPageState extends State<ListViewPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const IconButton(
-          icon: Icon(
-            Icons.menu,
-            color: Colors.white,
-          ),
-          tooltip: 'Navigation menu',
-          onPressed: null,
-        ),
+        leading: const BackButton(),
         title: const Center(
           child: Text('List view'),
         ),

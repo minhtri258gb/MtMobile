@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Web",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-renderer",
+                "html",
+            ]
+        },
+        {
             "name": "MtMobile",
             "request": "launch",
             "type": "dart"

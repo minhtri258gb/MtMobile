@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MyTab extends StatefulWidget {
-  const MyTab({super.key});
+class HomeTabPanel extends StatefulWidget {
+  const HomeTabPanel({super.key});
 
   @override
-  State<MyTab> createState() => _MyTabState();
+  State<HomeTabPanel> createState() => _HomeTabPanelState();
 }
 
-class _MyTabState extends State<MyTab> {
+class _HomeTabPanelState extends State<HomeTabPanel> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(

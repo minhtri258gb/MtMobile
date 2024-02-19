@@ -14,8 +14,8 @@ class ChatDetailPage extends StatefulWidget {
 
 class _ChatDetailPageState extends State<ChatDetailPage> {
   // Message input controller
-  late TextEditingController _input_ctrl;
-  late FocusNode _input_focus;
+  late TextEditingController inputCtrl;
+  late FocusNode inputFocus;
 
   // Flag
   bool _isTyping = false;
@@ -94,14 +94,14 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
   void initState() {
     super.initState();
 
-    _input_ctrl = TextEditingController();
-    _input_focus = FocusNode();
+    inputCtrl = TextEditingController();
+    inputFocus = FocusNode();
   }
 
   @override
   void dispose() {
-    _input_ctrl.dispose();
-    _input_focus.dispose();
+    inputCtrl.dispose();
+    inputFocus.dispose();
 
     super.dispose();
   }
@@ -192,8 +192,8 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                     child: Padding(
                       padding: const EdgeInsets.only(right: 12.0),
                       child: TextField(
-                        controller: _input_ctrl,
-                        focusNode: _input_focus,
+                        controller: inputCtrl,
+                        focusNode: inputFocus,
                         autofocus: true,
                         decoration: InputDecoration(
                           filled: true,
@@ -219,7 +219,7 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                   CircleAvatar(
                     child: IconButton(
                       onPressed: () {
-                        sendMessage(_input_ctrl.text);
+                        sendMessage(inputCtrl.text);
                       },
                       icon: const Icon(Icons.send, color: Colors.white),
                     ),
@@ -249,8 +249,8 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
         messages.add(message);
       }
       _isTyping = false;
-      _input_ctrl.clear();
-      _input_focus.requestFocus();
+      inputCtrl.clear();
+      inputFocus.requestFocus();
     });
   }
 }

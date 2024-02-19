@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'message.dart';
 
 class Contact {

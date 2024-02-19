@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // import 'dart:async';
 // import 'package:flutter/services.dart';
 // import 'package:http/retry.dart';
-import 'dart:convert' as convert;
+// import 'dart:convert' as convert;
 // import 'package:http/http.dart' as http;
 
 class RestApiPage extends StatefulWidget {
@@ -35,8 +35,7 @@ class _RestApiState extends State<RestApiPage> {
   }
 
   void callHttp() async {
-    var url =
-        Uri.https('www.googleapis.com', '/books/v1/volumes', {'q': '{http}'});
+    // var url = Uri.https('www.googleapis.com', '/books/v1/volumes', {'q': '{http}'});
 
     // Await the http get response, then decode the json-formatted response.
     // var response = await http.get(url);

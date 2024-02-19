@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:mtmobile/pages/chat/message.dart';
 
-import '../utils/rand.dart';
+import '../../utils/rand.dart';
 import 'contact.dart';
-import 'page_chat.dart';
+import 'detail_page.dart';
 
 class ChatListPage extends StatefulWidget {
   const ChatListPage({super.key});

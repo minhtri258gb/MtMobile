@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../pages/login/page.dart';
+
 class SideMenuApp extends StatefulWidget {
   const SideMenuApp({super.key, required this.title});
 
@@ -54,10 +56,10 @@ class _MySideMenuState extends State<SideMenuApp> {
 
 class InfoCard extends StatelessWidget {
   const InfoCard({
-    Key? key,
+    super.key,
     required this.name,
     required this.profession,
-  }) : super(key: key);
+  });
 
   final String name, profession;
 
@@ -83,16 +85,16 @@ class InfoCard extends StatelessWidget {
 }
 
 class SideMenuItem extends StatelessWidget {
-  SideMenuItem({Key? key}) : super(key: key);
+  const SideMenuItem({super.key});
 
   final menu = null;
-  final VoidCallback press = () {};
+  // final VoidCallback press = () {};
   final bool isActive = false;
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
+    return const Column(
+      children: [
         Padding(
             padding: EdgeInsets.only(top: 8.0),
             child: Divider(color: Colors.white24, height: 1)),
@@ -190,6 +192,20 @@ class SideMenu extends StatelessWidget {
               color: Colors.black,
             ),
             title: const Text("sent"),
+          ),
+          ListTile(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const LoginPage(),
+                  ));
+            },
+            leading: const Icon(
+              Icons.inbox,
+              color: Colors.black,
+            ),
+            title: const Text("Logout"),
           )
         ],
       ),

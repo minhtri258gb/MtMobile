@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import '../../config.dart';
+import '../../common/config.dart';
 
 class Event {
   final String title;
@@ -17,13 +17,13 @@ class Event {
     //JSON String to a map
     List<dynamic> lst = jsonDecode(jsonString);
     for (var i = 0; i < lst.length; i++) {
-      Map<String, dynamic> eventMap = lst[i];
-      var event = Event.fromJson(eventMap);
+      // Map<String, dynamic> eventMap = lst[i];
+      // var event = Event.fromJson(eventMap);
       if (MT.kDebugMode) {
-        print("Title: " + event.title);
+        // print("Title: " + event.title);
       }
-      print("Date: " + event.date);
-      print("URL: " + event.imageUrl);
+      // print("Date: " + event.date);
+      // print("URL: " + event.imageUrl);
     }
     //Serialize to object
     //

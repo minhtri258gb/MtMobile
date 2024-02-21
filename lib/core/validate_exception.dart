@@ -1,0 +1,3 @@
+class ValidateException {
+  String msg = "";
+}

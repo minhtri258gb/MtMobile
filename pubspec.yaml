@@ -40,6 +40,21 @@ dependencies:
   intl: ^0.19.0
   http: ^1.2.0
   qr_code_scanner: ^1.0.1
+  flutter_map: ^4.0.0
+  geocoding: ^2.1.1
+  geocoder: ^0.2.1
+  tuple: ^2.0.2
+  positioned_tap_detector_2: ^1.0.4
+  transparent_image: ^2.0.1
+  async: ^2.10.0
+  flutter_image: ^4.1.9
+  vector_math: ^2.1.4
+  proj4dart: ^2.1.0
+  meta: ^1.8.0
+  collection: ^1.17.0
+  latlong2: ^0.8.2
+  mapsforge_flutter: ^2.0.2
+  geolocator: ^11.0.0
 
 dev_dependencies:
   flutter_test:

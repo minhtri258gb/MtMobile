@@ -27,4 +27,7 @@
 * Rename package name: flutter pub run <com.old.package.name>:main <com.new.package.name>
 
 # TODO
+flutter pub add geolocator
+flutter pub remove latlong
+
 Run offline: flutter run -d chrome --web-renderer html

@@ -5,11 +5,41 @@
 			"type": "flutter",
 			"command": "flutter",
 			"args": [
+				"run",
+				"-d",
+				"chrome"
+			],
+			"group": {
+				"kind": "test"
+			},
+			"problemMatcher": [],
+			"label": "Run Web",
+			"detail": ""
+		},
+		{
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
 				"packages",
 				"get"
 			],
 			"problemMatcher": [],
 			"label": "Package Install",
+			"detail": ""
+		},
+		{
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"build",
+				"apk"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "flutter: flutter build apk",
 			"detail": ""
 		}
 	]

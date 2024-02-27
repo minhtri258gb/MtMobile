@@ -93,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
                 children: [
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.pop(context);
+                      Navigator.pushNamed(context, '/home');
                     },
                     child: const Text(
                       "GUEST",

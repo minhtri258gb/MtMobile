@@ -1,9 +1,14 @@
+/*
+- Download map: https://download.mapsforge.org/maps/v5/asia/
+*/
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mapsforge_flutter/core.dart';
 import 'package:mapsforge_flutter/maps.dart';
 import 'package:mapsforge_flutter/marker.dart';
 import 'package:mtmobile/services/geo_location.dart';
+import '../../modules/slide_menu.dart';
 
 class MapPage extends StatefulWidget {
   const MapPage({super.key});
@@ -83,7 +88,8 @@ class _MapPageState extends State<MapPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Simplified example")),
+      appBar: AppBar(title: const Text("Offline Map")),
+      drawer: SideMenu(),
       body: MapviewWidget(
         displayModel: displayModel,
         createMapModel: _createMapModel,

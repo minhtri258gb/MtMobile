@@ -43,7 +43,7 @@ class MusicManager {
   void init() async {
     // API get list music
     final response = await http.post(
-      Uri.parse('${MT.serverURL}/music/getListMusic'),
+      Uri.parse('${Config.serverURL}/music/getListMusic'),
       headers: {"Content-Type": "application/json"},
     );
 

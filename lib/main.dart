@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/home/page.dart';
+import 'common/routing.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Nunito',
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      initialRoute: Routing.defaultRoute,
+      routes: Routing.routes,
     );
   }
 }

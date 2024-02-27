@@ -1,4 +1,4 @@
-class MT {
+class Config {
   // DEV
   static bool kDebugMode = true;
 
